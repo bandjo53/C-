@@ -1,0 +1,26 @@
+x = 0.2
+n = 1
+arctgx = x
+buffer = 1
+
+def minus(n,x):
+    if n % 2  == 0:
+        return x
+    else:
+        return -x
+
+def vozvedenie(x,y):
+    sum = x
+    for i in range(y-1):
+        sum *= x
+    return sum
+ 
+while buffer != arctgx:
+    buffer = arctgx
+    print(buffer)
+    arctgx += minus(n,(vozvedenie(x,(2*n+1))/(2*n + 1)))
+    n += 1
+    print(arctgx)
+    
+
+
